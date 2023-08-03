@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Cache-directive" content="no-cache" />
+    <meta http-equiv="Pragma-directive" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<title>Library App</title>
+</head>
+<body>
+<div class="container">
+        <header>
+            <h1>Library Application</h1>
+            <div class="byline">
+                <a href="/">Home</a>
+            </div>
+        </header>
+        
+        <h2>Item: {{ title }}</h2>
+        
+ <table class="table table-striped">
+            <tr>
+                <th>Borrower</th>
+                <th>Borrowed Date</th>
+                <th>Returned Date</th>
+            </tr>
+        {% for tup in loan_list %}
+            <tr>
+                <td>{{ tup[0] }}</td>
+                <td>{{ tup[1] }}</td>
+                <td>{{ tup[2] }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Cache-directive" content="no-cache" />
+    <meta http-equiv="Pragma-directive" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>Library App</title>
+</head>
+    <body>
+    <div class="container">
+        <header>
+            <h1>Library Application</h1>
+            <h2>
+                <a href="/statistics">Statistics</a>
+            </h2>
+        </header>
+   <!--  <div id="map" style="width:100%; height:300px;"></div> -->
+   
+        <form action="/" method="POST">
+          <select name="criterion_index">
+            {% for (index, criterion) in criteria %}
+              <option value="{{index}}"
+              {{'selected="selected"' if index==last_criterion_index}}
+              >{{criterion}}</option>
+            {% endfor %}
+          </select>
+          <input type="submit" value="Sort" />
+        </form>
+        <table class="table table-striped table-bordered">
+          <thead class="thead-inverse">
+            <tr>
+                <th>Title</th>
+                <th>Library</th>
+                <th>Format</th>
+                <th>Language</th>
+                <th>Status</th>
+                <th>Borrower</th>
+                <th>Due Date</th>
+            </tr>
+          </thead>
+        {% for tup in object_list %}
+            <tr>
+                <td><a href="item_{{ tup[0] }}/">{{ tup[0] }}</a></td>
+                <td><a href="lib_{{ tup[1] }}/">{{ tup[1] }}</a></td>
+                <td>{{ tup[2] }}</td>
+                <td>{{ tup[3] }}</td>
+                <td>{{ tup[4] }}</td>
+                <td>{{ tup[5] }}</td>
+                <td>{{ tup[6] }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </div>  
+    </body>
+</html>
