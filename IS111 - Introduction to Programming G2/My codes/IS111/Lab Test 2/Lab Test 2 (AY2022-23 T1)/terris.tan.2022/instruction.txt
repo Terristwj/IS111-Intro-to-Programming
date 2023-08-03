@@ -1,0 +1,1 @@
+Copy all the *_tester.py and input files into <your_email_id> foler. Run each grading file, e.q., q1_tester.py, to see the score given for each question. You should look at the code in each grading file to understand how marks are given.

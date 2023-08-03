@@ -1,0 +1,22 @@
+We have the following fruits:
+apple
+orange
+pear
+grape
+grapefruit
+
+We have the following drinks:
+tea
+soda
+water
+juice
+coffee
+oil
+
+We have the following protein:
+fish
+eggs
+meat
+chicken
+beef
+pork

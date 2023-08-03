@@ -1,0 +1,19 @@
+03-2016: total transaction amount is $21.3
+	Popular	$21.30
+
+12-2016: total transaction amount is $606.3299999999999
+	NTUC FairPrice	$59.43
+	SIA	$546.90
+
+01-2017: total transaction amount is $79.66
+	Shell Station	$47.56
+	SingTel	$32.10
+
+03-2017: total transaction amount is $139.82
+	SingTel	$31.50
+	NTUC FairPrice	$108.32
+
+02-2017: total transaction amount is $49.7
+	Popular	$25.40
+	Shaw Theatres	$24.30
+

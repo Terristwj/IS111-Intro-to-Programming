@@ -1,0 +1,5 @@
+Joe Biden	2021 - 
+Donald Trump	2017 - 2021
+Barack Obama	2009 - 2017
+George W. Bush	2001 - 2009
+Bill Clinton	1993 - 2001

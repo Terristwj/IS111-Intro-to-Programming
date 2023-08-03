@@ -1,0 +1,3 @@
+apple orange pear grape grapefruit 
+tea soda water juice coffee oil
+fish eggs meat chicken beef pork

@@ -1,0 +1,4 @@
+Tue|10AM|11AM|user0
+Wed|1PM|4PM|user1 user2
+Mon|9AM|5PM|user3
+Sat|2PM|4PM|user4 user5 user6 user7

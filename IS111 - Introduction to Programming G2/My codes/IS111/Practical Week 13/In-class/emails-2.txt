@@ -1,0 +1,5 @@
+12:30:00	joe@abc.com	jerry@abc.com
+11:20:00	joe@abc.com	john@abc.com
+11:45:30PM	joe@abc.com	bob@abc.com
+01:59:59PM	jerry@abc.com	joe@abc.com
+14:00:01	joe@abc.com	adam@xyz.edu
